@@ -22,5 +22,5 @@ print(array)
 
 #How do uou select all rows where a columnn value>10 in 2D array?
 """ 1. by using where function in numpy
-    2. and through 0-axis slicing.
+    2. and throuugh 0-axis slicing.
 """
