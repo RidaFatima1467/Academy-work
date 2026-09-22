@@ -1,31 +1,21 @@
-# Week 2 Day 4 - AFL Player Performance Analysis
+1. Analyzed AFL player performance from 2020 to 2025.
 
-1. Loaded the three AFL datasets using Pandas.
+2. Identified the Top 10 valuable players.
 
-2. Checked the datasets for columns, data types, missing values, and duplicates.
+3. Found the most consistent players using CV.
 
-3. Handled missing values and removed duplicate records.
+4. Compared player performance between the first and second half.
 
-4. Selected the 2025 regular-season data for analysis.
+5. Identified improving and declining players.
 
-5. Merged player information with seasonal statistics to get player names.
+6. Ranked teams based on player performance.
 
-6. Created new features such as Goals Per Game, Fantasy Points Per Game, Score Per Game, Disposal Efficiency, Contested Possession Rate, and Tackles Per Game.
+7. Created new features such as Goals per Game and Fantasy Points per Game.
 
-7. Created a Performance Index using six player performance statistics.
+8. Created different charts to understand the data.
 
-8. Identified the Top 10 Most Valuable Players using the Performance Index.
+9. Selected 5 players for final recruitment recommendations.
 
-9. Analyzed player consistency using average fantasy points, standard deviation, and coefficient of variation.
+10. Generated business insights from the analysis.
 
-10. Compared the first five and last five games to identify improved and declined players.
-
-11. Ranked teams based on their average player Performance Index.
-
-12. Created 9 visualizations to support the analysis.
-
-13. Identified important business insights from the analysis.
-
-14. Selected 5 players for recruitment consideration based on their performance data.
-
-15. Created a final summary of the AFL player performance analysis.
+11. Used Python, Pandas, Matplotlib and Seaborn for analysis and visualization.
