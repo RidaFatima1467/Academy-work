@@ -56,19 +56,31 @@ The database uses relationships between tables to avoid storing the same informa
 For example:
 
 Country → City: One country can have many cities.
+
 City → Address: One city can have many addresses.
+
 Address → Customer/Staff/Store: An address can be associated with customers, staff, or stores.
+
 Language → Film: One language can be used for many films.
+
 Film → Inventory: A film can have multiple copies in the inventory.
+
 Store → Inventory: A store can have many inventory items.
+
 Film ↔ Actor: This is a many-to-many relationship handled by the film_actor table.
+
 Film ↔ Category: This is a many-to-many relationship handled by the film_category table.
+
 Customer → Rental: A customer can make many rentals.
+
 Staff → Rental: A staff member can process many rentals.
+
 Rental → Payment: A rental can have a related payment record.
+
 Primary Keys and Foreign Keys
 
 Primary Key (PK) uniquely identifies each record in a table.
+
 For example:
 
 customer_id
@@ -77,13 +89,18 @@ actor_id
 rental_id
 
 Foreign Key (FK) connects one table to another.
+
 For example:
 
 customer.address_id connects Customer with Address.
+
 film.language_id connects Film with Language.
+
 rental.customer_id connects Rental with Customer.
+
 rental.inventory_id connects Rental with Inventory.
-Purpose of the ER Diagram
+
+**Purpose of the ER Diagram**
 
 The main purpose of this ER diagram is to show how the different parts of the rental database are connected.
 It makes it easier to understand the database structure and write SQL queries using JOINs to get information from multiple tables.
