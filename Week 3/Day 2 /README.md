@@ -34,63 +34,77 @@ about movies, customers, staff, stores, rentals, and payments. The tables are co
 and Foreign Keys (FK).
 
 **Main Tables**
-Country – Stores country information such as country ID and country name.
-City – Stores city information and connects each city to a country.
-Address – Stores customer, staff, and store address information.
-Customer – Stores customer details such as name, email, address, and active status.
-Staff – Stores staff information such as name, email, username, password, and store.
-Store – Stores information about rental stores and their managers.
-Actor – Stores information about actors, including first and last names.
-Film – Stores movie information such as title, description, release year, language, rental price, duration, rating, and special features.
-Language – Stores the languages available for movies.
-Category – Stores movie categories such as Action, Comedy, Drama, etc.
-Film_Actor – Connects films with actors. One film can have many actors, and one actor can appear in many films.
-Film_Category – Connects films with categories. A film can belong to multiple categories.
-Inventory – Keeps track of the copies of each film available at different stores.
-Rental – Records when a customer rents an inventory item and which staff member processes the rental.
-Payment – Stores payment information related to customers, staff, and rentals.
-Relationships
+
+**Country:** Stores country information such as country ID and country name.
+
+
+**City:** Stores city information and connects each city to a country.
+
+**Address:** Stores customer, staff, and store address information.
+
+**Customer:**  Stores customer details such as name, email, address, and active status.
+
+**Staff:**  Stores staff information such as name, email, username, password, and store.
+
+**Store:**  Stores information about rental stores and their managers.
+
+**Actor:**  Stores information about actors, including first and last names.
+
+**Film:**  Stores movie information such as title, description, release year, language, rental price, duration, rating, and special features.
+
+**Language:**  Stores the languages available for movies.
+
+**Category:** Stores movie categories such as Action, Comedy, Drama, etc.
+
+**Film_Actor:** – Connects films with actors. One film can have many actors, and one actor can appear in many films.
+
+**Film_Category:** Connects films with categories. A film can belong to multiple categories.
+
+**Inventory:**  Keeps track of the copies of each film available at different stores.
+
+**Rental:** Records when a customer rents an inventory item and which staff member processes the rental.
+
+**Payment:**  Stores payment information related to customers, staff, and rentals.
+
+**Relationships**
 
 The database uses relationships between tables to avoid storing the same information repeatedly.
 
-For example:
+**For example:**
 
-Country → City: One country can have many cities.
+**Country → City:** One country can have many cities.
 
-City → Address: One city can have many addresses.
+**City → Address:** One city can have many addresses.
 
-Address → Customer/Staff/Store: An address can be associated with customers, staff, or stores.
+**Address → Customer/Staff/Store:** An address can be associated with customers, staff, or stores.
 
-Language → Film: One language can be used for many films.
+**Language → Film:** One language can be used for many films.
 
-Film → Inventory: A film can have multiple copies in the inventory.
+**Film → Inventory:** A film can have multiple copies in the inventory.
 
-Store → Inventory: A store can have many inventory items.
+**Store → Inventory:** A store can have many inventory items.
 
-Film ↔ Actor: This is a many-to-many relationship handled by the film_actor table.
+**Film ↔ Actor:** This is a many-to-many relationship handled by the film_actor table.
 
-Film ↔ Category: This is a many-to-many relationship handled by the film_category table.
+**Film ↔ Category:** This is a many-to-many relationship handled by the film_category table.
 
-Customer → Rental: A customer can make many rentals.
+**Customer → Rental:** A customer can make many rentals.
 
-Staff → Rental: A staff member can process many rentals.
+**Staff → Rental:** A staff member can process many rentals.
 
-Rental → Payment: A rental can have a related payment record.
+**Rental → Payment:** A rental can have a related payment record.
 
-Primary Keys and Foreign Keys
+**Primary Keys and Foreign Keys**
 
 Primary Key (PK) uniquely identifies each record in a table.
 
-For example:
+**For example:**
 
-customer_id
-film_id
-actor_id
-rental_id
+customer_id, film_id, actor_id,rental_id
 
 Foreign Key (FK) connects one table to another.
 
-For example:
+**For example:**
 
 customer.address_id connects Customer with Address.
 
